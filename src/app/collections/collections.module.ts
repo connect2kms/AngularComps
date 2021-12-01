@@ -6,9 +6,12 @@ import { CollectionsHomeComponent } from './collections-home/collections-home.co
 import { TableComponent } from './table/table.component';
 
 import { SharedModule } from '../shared/shared.module';
+import { BiographyComponent } from './biography/biography.component';
+import { CompaniesComponent } from './companies/companies.component';
+import { PartnersComponent } from './partners/partners.component';
 
 @NgModule({
-  declarations: [CollectionsHomeComponent, TableComponent],
+  declarations: [CollectionsHomeComponent, TableComponent, BiographyComponent, CompaniesComponent, PartnersComponent],
   imports: [CommonModule, CollectionsRoutingModule, SharedModule],
   exports: [],
 })
