@@ -1,1 +1,21 @@
-<p>modal works!</p>
+<div (click)="onCloseClick()" class="ui dimmer visible active">
+  <div (click)="$event.stopPropagation()" class="ui modal visible active">
+    <i (click)="onCloseClick()" class="close icon"></i>
+    <div class="header">Modal Header</div>
+    <div class="content">
+      <div class="description">
+        <p>The content of the model goes here!</p>
+        <p>Is it working ??</p>
+      </div>
+    </div>
+    <div class="actions">
+      <div
+        (click)="onCloseClick()"
+        class="ui positive right labeled icon button"
+      >
+        Yes, it's working
+        <i class="checkmark icon"></i>
+      </div>
+    </div>
+  </div>
+</div>
